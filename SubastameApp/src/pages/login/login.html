@@ -1,0 +1,36 @@
+
+<ion-content center>
+
+ 
+  <ion-list radio-group (ionChange)="changeLanguages();" [(ngModel)]="languages">
+
+    <ion-list-header>
+      Idioma
+    </ion-list-header>
+  
+    <ion-item>
+      <ion-label>Español</ion-label>
+      <ion-radio value="es"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>English</ion-label>
+      <ion-radio value="en"></ion-radio>
+    </ion-item>
+  
+  
+  
+  </ion-list>
+  <h3>{{ 'SUBASTAME' | translate }}</h3>
+  <ion-label  color="primary">{{ 'USER' | translate }}</ion-label>
+  <ion-input [(ngModel)]="user"></ion-input>
+  <ion-label color="primary">{{ 'PASS' | translate }}</ion-label>
+  <ion-input [(ngModel)]="password" type="password"></ion-input>
+  <p>
+    <button ion-button color="primary"   (click)="login()" >{{ 'LOGIN' | translate }}</button>
+  </p>
+  <button ion-button [navPush]="registerPage">
+    {{ 'REGISTER' | translate }}
+  </button>
+
+</ion-content>

@@ -1,0 +1,10 @@
+{
+  "HELLO": "Hola",
+  "SUBASTAME":"SUBASTAME",
+  "USER":"Usuario",
+  "PASS":"Contraseña",
+  "LOGIN":"Iniciar sesión",
+  "REGISTER":"Registrarme",
+  "NAME": "Nombre",
+  "EMAIL":"Correo Electrónico"
+}

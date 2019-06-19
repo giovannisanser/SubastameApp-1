@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Registro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h3>Registro</h3>
+
+  <form (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label>{{ 'NAME' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="user.name" name="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ 'EMAIL' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="user.mail" name="mail"></ion-input>
+    </ion-item>
+
+    <button ion-button type="submit" block>Add Todo</button>
+  </form>
+
+</ion-content>
